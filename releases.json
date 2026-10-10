@@ -1,0 +1,108 @@
+{
+  "commit": "88d622c2ad7022d9157df7d7888f75c7f2ef0f9e",
+  "packages": [
+    {
+      "path": "archive/EditAssist/0.1.0/EditAssist-0.1.0-net10.ymme",
+      "bytes": 51191,
+      "sha256": "BDB98536733D41FDFE1B16AAF584412643DB0F213E5133E574B7C53A787CE80A",
+      "git_blob_sha": "8cc734f2507f69fcac6350cd5980b30aca06f8c9"
+    },
+    {
+      "path": "archive/EditAssist/0.1.0/YMM4-EditAssist-0.1.0-source.zip",
+      "bytes": 45543,
+      "sha256": "4207CA2CD86A681B6C06F5574E2E5D98B73D2414AC949EB43124210434741669",
+      "git_blob_sha": "3afd34008934fcc55c8019f87dc69cdecbd29fba"
+    },
+    {
+      "path": "archive/EditAssist/0.2.0/EditAssist-0.2.0-net10.ymme",
+      "bytes": 97803,
+      "sha256": "08CB3D238B078C81210ECEDD128326EFFAE3ED9AC88B166C3298402895C854CF",
+      "git_blob_sha": "224dd6661c93c6211af2e1ead09a7f2973134fa2"
+    },
+    {
+      "path": "archive/EditAssist/0.2.0/YMM4-EditAssist-0.2.0-source.zip",
+      "bytes": 79417,
+      "sha256": "2040CF497E7B300799C4FBD4F538B0F9813BABE762465E2A4B9433308A6504CA",
+      "git_blob_sha": "2541d9cbe643a1d99c05d3760713f596c88594ea"
+    },
+    {
+      "path": "archive/EditAssist/0.3.0/EditAssist-0.3.0-net10.ymme",
+      "bytes": 130696,
+      "sha256": "D889A24B50B4ADFB3933DA80B7D2EC55D259AAB2DB324B12864E8FAA07F0BBEF",
+      "git_blob_sha": "e41d73ff9cdf61b7c7e0f8b75c89973d073dbee2"
+    },
+    {
+      "path": "archive/EditAssist/0.3.0/YMM4-EditAssist-0.3.0-source.zip",
+      "bytes": 107375,
+      "sha256": "4FAFC6047215658A7A8F072AFA06ABC614875E5D8850AA77566239DD875E7995",
+      "git_blob_sha": "fe3aaf42ac084adf147f186b35a0c2ea8937dd97"
+    },
+    {
+      "path": "archive/EditAssist/0.4.0/EditAssist-0.4.0-net10.ymme",
+      "bytes": 139098,
+      "sha256": "6456646AC59EEFCD1C41693129E5470253AD319E60E1D134BB9ECB0D94AB64F8",
+      "git_blob_sha": "d0db493c44e908789cfc3b8bf32b203ee900bcb8"
+    },
+    {
+      "path": "archive/EditAssist/0.4.0/YMM4-EditAssist-0.4.0-source.zip",
+      "bytes": 118304,
+      "sha256": "D12284C396A354F9B7E3FF8F1E7654076646E37E363B6FB8C9860D5476639776",
+      "git_blob_sha": "87ad1880ad18fb117d1bff349f028d336632c35c"
+    },
+    {
+      "path": "archive/EditAssist/0.4.0/YMM4-EditAssist-0.4.0-source-github.zip",
+      "bytes": 125121,
+      "sha256": "10302E1D47687D7A1B041AE907B6842E2313735AA63A147AB508B710D72FFC17",
+      "git_blob_sha": "8cebfe101a084fbd2428f055d2c57defd86f7713"
+    },
+    {
+      "path": "archive/EditAssist/0.5.0/EditAssist-0.5.0-net10.ymme",
+      "bytes": 173440,
+      "sha256": "18E993ADF65572120EAE8BDB365D46E706AC8149488A562A9373BC1E7FF720BB",
+      "git_blob_sha": "7eed49f3e177f229f4a41d60a677290fa6f2cffb",
+      "build_scope": "Linux cross-build; Windows/live ChatGPT unverified"
+    },
+    {
+      "path": "archive/EditAssist/0.5.0/YMM4-EditAssist-0.5.0-source.zip",
+      "bytes": 160807,
+      "sha256": "4765897F6C7FFA28A20B6DC78ACF1C85C4AE77E020477DD9A2429A7C38FF8F50",
+      "git_blob_sha": "6d7c8f5ba3e35cc7f22cc29f6a0062db03480671",
+      "build_scope": "Linux cross-build; Windows/live ChatGPT unverified"
+    },
+    {
+      "path": "archive/EditAssist/0.5.1/EditAssist-0.5.1-net10.ymme",
+      "bytes": 184197,
+      "sha256": "21325197323199E4FBC1DF08BB2DFF41145572C8A661A15C10F596B8E8EEA313",
+      "git_blob_sha": "3eaf922f7778e715916b0fbde1c844857fb2b42d",
+      "build_scope": "163 core checks; Linux cross-build passed; Windows/live ChatGPT unverified"
+    },
+    {
+      "path": "archive/EditAssist/0.5.1/YMM4-EditAssist-0.5.1-source.zip",
+      "bytes": 168226,
+      "sha256": "11FB9026175AB17440294467BD631A80F108762592B04D8F8F158928643231CE",
+      "git_blob_sha": "7b4e26e7cc6b6755a9ffd22ee89af604e746f382",
+      "build_scope": "163 core checks; Linux cross-build passed; Windows/live ChatGPT unverified"
+    },
+    {
+      "path": "archive/EditAssist/0.5.2/EditAssist-0.5.2-net10.ymme",
+      "bytes": 186971,
+      "sha256": "129BA41DF099D5F7F5F752D4277928AF543639AD73F8B3664E20BE3FA7DC2564",
+      "git_blob_sha": "3971d318ed6f1853316f2770a79b14298e938a96",
+      "build_scope": "184 core checks and 6 PowerShell Linux fixtures passed; YMM4 4.56.1.0 cross-build passed; Windows/live YMM4 unverified"
+    },
+    {
+      "path": "archive/EditAssist/0.5.2/YMM4-EditAssist-0.5.2-source.zip",
+      "bytes": 956034,
+      "sha256": "D84A3FB20A7D2EAA3F33DD04ED73EC9EAD3BD30761CCF35CA6A9754E9467427D",
+      "git_blob_sha": "7e8c148c86a57ae655352cda6fa88b02b40c7012",
+      "build_scope": "184 core checks and 6 PowerShell Linux fixtures passed; YMM4 4.56.1.0 cross-build passed; Windows/live YMM4 unverified"
+    },
+    {
+      "path": "archive/VersionManager/0.5.2/EditAssist-VersionManager-0.5.2-net10.ymme",
+      "bytes": 980751,
+      "sha256": "053B9B0B28064C749D20541B90DBCED7C4351B8B163FA0B03C204E0421C4585D",
+      "git_blob_sha": "049de20064f5ba04f2107c6755c748adbea513e5",
+      "build_scope": "184 core checks and 6 PowerShell Linux fixtures passed; YMM4 4.56.1.0 cross-build passed; Windows/live YMM4 unverified"
+    }
+  ]
+}

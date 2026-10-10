@@ -20,7 +20,7 @@ function renderDemo() {
   if (line.checked) value = value.replace('酒場と宿屋を兼ねた', '酒場と宿屋を兼ねた\n').replace('木と石を組み合わせて', '木と石を組み合わせて\n');
   const text = document.getElementById('subtitle-text');
   text.textContent = value;
-  text.classList.toggle('small', size.checked && !split.checked);
+  text.classList.toggle('small', size.checked);
   document.getElementById('page-status').textContent = `${page + 1} / ${pages.length}`;
   previous.disabled = page === 0;
   next.disabled = page >= pages.length - 1;

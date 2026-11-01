@@ -56,3 +56,24 @@
 .preregister-layout #registration-copy-status:not(:empty){margin-top:10px;color:var(--registration-accent);font-size:12px}
 .preregister-layout :is(#registration-copy,#registration-cancel-url):focus-visible{outline:3px solid var(--registration-accent);outline-offset:3px}
 @media(max-width:760px){.preregister-layout .registration-section{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "form" "aside";grid-template-rows:auto;gap:24px;padding-block:20px 28px}.preregister-layout .registration-card{padding:20px}.preregister-layout #registration-title{font-size:1.5rem}.preregister-layout main{padding-block:12px 24px}.preregister-layout .registration-copy .registration-lead{margin-top:12px}.preregister-layout .registration-benefits{margin-top:14px}.preregister-layout .receipt-actions{align-items:stretch;flex-direction:column}.preregister-layout #registration-copy{width:100%}}
+
+/* Readable supporting text; keep the product typography and accent colors. */
+.preregister-layout .registration-copy .eyebrow{font-size:13px;line-height:1.6;letter-spacing:.08em}
+.preregister-layout .registration-copy .registration-lead{line-height:1.8}
+.preregister-layout .registration-benefits span{font-size:13px;line-height:1.7;padding:4px 8px}
+.preregister-layout .registration-back{font-size:14px;line-height:1.7}
+.preregister-layout .registration-back a{display:inline-block;padding-block:6px}
+.preregister-layout #registration-help{font-size:13px;line-height:1.7;color:#53615a}
+.preregister-layout .consent-label{font-size:14px;line-height:1.75}
+.preregister-layout .consent-label input{width:20px;height:20px;margin-top:4px}
+.preregister-layout .consent-label a{display:inline-block;padding-block:3px;line-height:1.6}
+.preregister-layout .registration-delivery-note{font-size:14px;line-height:1.75;color:#46534d}
+.preregister-layout .registration-social,.preregister-layout .registration-social strong,.preregister-layout .registration-social p{font-size:14px;line-height:1.75}
+.preregister-layout .registration-conditions,.preregister-layout .registration-conditions strong,.preregister-layout .registration-conditions p{font-size:14px;line-height:1.75;color:#46534d}
+.preregister-layout #registration-status,.preregister-layout .registration-receipt p,.preregister-layout .receipt-link-label,.preregister-layout #registration-cancel,.preregister-layout #registration-copy-status:not(:empty){font-size:14px;line-height:1.75}
+.preregister-layout #registration-cancel{display:inline-flex;align-items:center;min-height:32px}
+.preregister-layout #registration-cancel-url{font-size:13px}
+.preregister-layout .registration-dialog-body,.preregister-layout .registration-dialog-body p{font-size:14px;line-height:1.8}
+.preregister-layout footer p,.preregister-layout footer .footer-note{font-size:13px;line-height:1.75}
+@media(max-width:900px){.preregister-layout .registration-section{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "form" "aside";grid-template-rows:auto;gap:24px}.preregister-layout .registration-card{padding:24px}}
+@media(max-width:480px){.preregister-layout .registration-card{padding:20px}.preregister-layout .registration-copy .registration-lead{font-size:15px}}

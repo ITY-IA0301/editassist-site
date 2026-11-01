@@ -1,0 +1,14 @@
+.privacy-is-open{overflow:hidden}
+.privacy-open{display:inline-block;margin-top:20px;text-decoration:underline;text-underline-offset:3px}
+.registration-dialog{width:min(680px,calc(100vw - 32px));max-height:min(80vh,760px);max-height:min(80dvh,760px);padding:0;border:1px solid #dadbd3;border-radius:12px;background:#fff;color:#232d31;box-shadow:0 24px 80px #0004;overflow:hidden}
+.registration-dialog[open]{display:flex;flex-direction:column}
+.registration-dialog::backdrop{background:#14251dcc}
+.registration-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;border-bottom:1px solid #dadbd3;flex-shrink:0}
+.registration-dialog h2{font-family:inherit;font-weight:700;line-height:1.5;font-size:18px;letter-spacing:0;margin:0}
+.registration-dialog-header button{flex-shrink:0;min-height:44px;padding:8px 14px;border:1px solid #9ca99c;border-radius:5px;background:#f7f5ef;color:#232d31;font:inherit;cursor:pointer}
+.registration-dialog-body{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:8px 22px 24px;font-size:13px;line-height:1.9;overflow-wrap:anywhere}
+.registration-dialog-body p{margin:16px 0 0}
+.registration-dialog :focus-visible{outline:3px solid #527a62;outline-offset:3px}
+@media(max-width:480px){.registration-dialog-header{padding:12px 16px}.registration-dialog h2{font-size:16px}.registration-dialog-body{padding:4px 16px 20px}}
+
+.preregistration-page main{padding-block:28px 48px}.registration-back{padding-block:12px}.preregistration-page .registration-section{padding-top:36px;padding-bottom:40px}.preregistration-page #registration-title{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.45}.preregistration-page .registration-dialog{color:var(--ink);background:var(--white)}.preregistration-page .registration-dialog-header button{border-color:var(--line);color:var(--ink)}.preregistration-page .registration-dialog a{color:#a84021;text-decoration:underline}.preregistration-page .registration-dialog h2{font-family:inherit}@media(max-width:600px){.preregistration-page main{padding-top:12px}.preregistration-page .registration-section{padding-top:20px}}

@@ -12,3 +12,47 @@
 @media(max-width:480px){.registration-dialog-header{padding:12px 16px}.registration-dialog h2{font-size:16px}.registration-dialog-body{padding:4px 16px 20px}}
 
 .preregistration-page main{padding-block:28px 48px}.registration-back{padding-block:12px}.preregistration-page .registration-section{padding-top:36px;padding-bottom:40px}.preregistration-page #registration-title{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.45}.preregistration-page .registration-dialog{color:var(--ink);background:var(--white)}.preregistration-page .registration-dialog-header button{border-color:var(--line);color:var(--ink)}.preregistration-page .registration-dialog a{color:#a84021;text-decoration:underline}.preregistration-page .registration-dialog h2{font-family:inherit}@media(max-width:600px){.preregistration-page main{padding-top:12px}.preregistration-page .registration-section{padding-top:20px}}
+
+/* Same information hierarchy, with each product's existing typography and palette. */
+.preregister-layout{--registration-accent:#b74525;--registration-line:#dadbd3;--registration-soft:#f2f1e9}
+.registration-page.preregister-layout{--registration-accent:#315c43;--registration-soft:#edf1e9}
+.preregister-layout main{padding-block:20px 36px}
+.preregister-layout .registration-back{padding-block:8px 16px;font-size:13px}
+.preregister-layout .registration-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"intro form" "aside form";grid-template-rows:auto auto;gap:20px 48px;align-items:start;padding-block:24px 32px}
+.preregister-layout .registration-copy{grid-area:intro;min-width:0}
+.preregister-layout .registration-copy .eyebrow{margin:0 0 12px;font-size:11px;letter-spacing:.12em;color:var(--registration-accent)}
+.preregister-layout #registration-title{margin:0;font-size:clamp(1.5rem,2.6vw,2.125rem);line-height:1.5;letter-spacing:0;text-wrap:balance}
+.preregister-layout #registration-title span{display:block}
+.preregister-layout .registration-copy .registration-lead{margin:16px 0 0;font-size:15px;line-height:1.9;color:inherit}
+.preregister-layout .registration-benefits{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.preregister-layout .registration-benefits span{padding:5px 9px;border:1px solid var(--registration-line);border-radius:5px;font-size:12px;line-height:1.5;white-space:nowrap}
+.preregister-layout .registration-benefits span::before{content:"✓ ";color:var(--registration-accent);font-weight:700}
+.preregister-layout .registration-card{grid-area:form;align-self:start;min-width:0;padding:28px;border:1px solid var(--registration-line);border-radius:12px;background:#fff}
+.preregister-layout .email-label{display:block;font-size:14px;font-weight:700;line-height:1.7}
+.preregister-layout #registration-email{width:100%;box-sizing:border-box;min-height:50px;margin-top:10px;padding:12px;font:inherit;font-size:16px;border:1px solid #9fa99f;border-radius:5px}
+.preregister-layout #registration-help{margin:8px 0 0;font-size:12px;line-height:1.7}
+.preregister-layout .consent-label{display:flex;align-items:flex-start;gap:10px;margin:20px 0;font-size:12px;line-height:1.8}
+.preregister-layout .consent-label input{width:18px;height:18px;flex-shrink:0;margin-top:3px;accent-color:var(--registration-accent)}
+.preregister-layout .consent-label a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.preregister-layout #registration-submit{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;font-size:15px;font-weight:700;background:var(--registration-accent);border-color:var(--registration-accent);color:#fff}
+.preregister-layout .registration-delivery-note{margin:12px 0 0;font-size:12px;line-height:1.8;color:#53605a}
+.preregister-layout .registration-aside{grid-area:aside;min-width:0;display:grid;gap:16px}
+.preregister-layout .registration-social{padding:14px 16px;border-left:3px solid var(--registration-accent);background:var(--registration-soft);font-size:13px;line-height:1.8}
+.preregister-layout .registration-social p{margin:3px 0 0;font-size:12px;line-height:1.8}
+.preregister-layout .registration-social a{color:var(--registration-accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.preregister-layout .registration-conditions{font-size:12px;line-height:1.8;color:#53605a}
+.preregister-layout .registration-conditions strong{font-size:13px;color:inherit}
+.preregister-layout .registration-conditions p{margin:7px 0 0;font-size:12px;line-height:1.8}
+.preregister-layout #registration-status{margin:0 0 16px;padding:14px;font-size:13px;line-height:1.8;border-radius:6px;background:var(--registration-soft);overflow-wrap:anywhere}
+.preregister-layout #registration-status.registration-error{border-left:3px solid #a42d19;background:#fff0e8;color:#8f2717}
+.preregister-layout .registration-receipt{margin:0;padding:0;background:transparent;border-radius:0;font-size:13px;line-height:1.8}
+.preregister-layout .registration-receipt>strong{display:block;font-size:17px;line-height:1.6}
+.preregister-layout .registration-receipt p{margin:10px 0;font-size:12px;line-height:1.8}
+.preregister-layout .receipt-link-label{display:block;margin:16px 0 7px;font-size:12px;font-weight:700}
+.preregister-layout #registration-cancel-url{display:block;width:100%;min-width:0;box-sizing:border-box;min-height:44px;padding:10px;border:1px solid var(--registration-line);border-radius:5px;background:#fafbf7;font-size:12px}
+.preregister-layout .receipt-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:12px}
+.preregister-layout #registration-copy{min-height:44px;padding:9px 14px;border:1px solid var(--registration-accent);border-radius:5px;background:var(--registration-accent);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.preregister-layout #registration-cancel{display:inline;margin:0;font-size:12px;line-height:1.8;color:var(--registration-accent);font-weight:700;text-decoration:underline;overflow-wrap:anywhere}
+.preregister-layout #registration-copy-status:not(:empty){margin-top:10px;color:var(--registration-accent);font-size:12px}
+.preregister-layout :is(#registration-copy,#registration-cancel-url):focus-visible{outline:3px solid var(--registration-accent);outline-offset:3px}
+@media(max-width:760px){.preregister-layout .registration-section{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "form" "aside";grid-template-rows:auto;gap:24px;padding-block:20px 28px}.preregister-layout .registration-card{padding:20px}.preregister-layout #registration-title{font-size:1.5rem}.preregister-layout main{padding-block:12px 24px}.preregister-layout .registration-copy .registration-lead{margin-top:12px}.preregister-layout .registration-benefits{margin-top:14px}.preregister-layout .receipt-actions{align-items:stretch;flex-direction:column}.preregister-layout #registration-copy{width:100%}}

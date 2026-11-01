@@ -33,9 +33,10 @@ registrationForm.addEventListener('submit', async event => {
     const cancelUrl = new URL(data.cancelUrl);
     if (cancelUrl.origin !== new URL(registrationForm.action).origin || !/^#cancel=[a-f0-9]{64}$/.test(cancelUrl.hash)) throw new Error('受付結果を確認できませんでした。時間をおいてお試しください。');
     document.getElementById('registration-cancel').href = cancelUrl.href;
+    document.getElementById('registration-cancel-url').value = cancelUrl.href;
     receipt.hidden = false;
     registrationForm.hidden = true;
-    status.textContent = '事前登録を受け付けました。ご入力ありがとうございます。すでに登録済みの場合は、重複して追加しません。';
+    status.textContent = '事前登録を受け付けました。';
     registrationForm.reset();
     status.focus();
   } catch (error) {
@@ -70,3 +71,17 @@ privacyDialog.addEventListener('close',()=>{
   if (privacyOpener?.isConnected) privacyOpener.focus({preventScroll:true});
 });
 if (location.hash === '#registration-privacy') openPrivacy(document.querySelector('a[href="#registration-privacy"]'));
+
+// Copy only the validated cancellation URL, after the visitor explicitly asks.
+document.getElementById('registration-copy').addEventListener('click',async()=>{
+  const field=document.getElementById('registration-cancel-url');
+  const message=document.getElementById('registration-copy-status');
+  const english=document.documentElement.lang==='en';
+  try {
+    await navigator.clipboard.writeText(field.value);
+    message.textContent=english?'Copied. Save the link somewhere safe.':'コピーしました。手元に保存してください。';
+  } catch {
+    field.focus();field.select();
+    message.textContent=english?'Link selected. Copy it using your device controls.':'リンクを選択しました。端末のコピー操作で保存してください。';
+  }
+});

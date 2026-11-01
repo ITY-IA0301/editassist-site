@@ -112,3 +112,8 @@ section[id],h1[id],h2[id],article[id],a[id],main[id]{scroll-margin-top:var(--hea
  .guide-disclosure>summary{padding:16px}
  .detail-content .guide-disclosure>section{padding:20px 16px}
 }
+
+/* Only the home hero registration CTA. Other buttons retain their current design. */
+.site-home .hero .button.primary{background:#b74525;border-color:#b74525}
+.site-home .hero .button.primary:hover{background:#9e371e;border-color:#9e371e}
+.site-home .hero .button.primary:focus-visible{outline:3px solid #232d31;outline-offset:4px}

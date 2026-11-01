@@ -1,7 +1,7 @@
 'use strict';
 // Subtitle demo and optional registration. No login, analytics, or user-file access.
-const fullText = '今日は、酒場と宿屋を兼ねた建物を作ります。まずは、木と石を組み合わせて外観を整えていきましょう。';
-const splitText = ['今日は、酒場と宿屋を兼ねた建物を作ります。', 'まずは、木と石を組み合わせて外観を整えていきましょう。'];
+const fullText = 'まずは、伝えたい内容を短く整理してみましょう。読みやすい位置で区切ると、字幕の内容が伝わりやすくなります。';
+const splitText = ['まずは、伝えたい内容を短く整理してみましょう。', '読みやすい位置で区切ると、字幕の内容が伝わりやすくなります。'];
 let page = 0;
 const split = document.getElementById('split');
 const size = document.getElementById('size');
@@ -12,7 +12,7 @@ function renderDemo() {
   const pages = split.checked ? splitText : [fullText];
   page = Math.min(page, pages.length - 1);
   let value = pages[page];
-  if (line.checked) value = value.replace('酒場と宿屋を兼ねた', '酒場と宿屋を兼ねた\n').replace('木と石を組み合わせて', '木と石を組み合わせて\n');
+  if (line.checked) value = value.replace('伝えたい内容を', '伝えたい内容を\n').replace('読みやすい位置で区切ると、', '読みやすい位置で区切ると、\n');
   const text = document.getElementById('subtitle-text');
   text.textContent = value;
   text.classList.toggle('small', size.checked);
@@ -31,3 +31,4 @@ function followLegacyRegistrationLink() {
 }
 followLegacyRegistrationLink();
 addEventListener('hashchange',followLegacyRegistrationLink);
+

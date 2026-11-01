@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#f7f5ef">
   <title>EditAssist — 制作中！ | YMM4の編集支援プラグイン</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261030">
-  <script src="app.js?v=20261101-ui" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261101-subtitle">
+  <script src="app.js?v=20261101-subtitle" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
@@ -58,7 +58,7 @@
     <article class="feature feature-dark"><span class="feature-number">06 / VERSION MANAGER</span><h3>使うバージョンを選べる</h3><p>独立した管理ツールで0.1.0〜0.5.2を選択。本体の切り替えはYMM4を終了した後に適用し、旧版に戻しても管理画面が残ります。</p><span class="guide-pending">バージョン選択ガイド（公開準備中）</span></article>
   </div>
 </section>
-<section id="subtitles" class="demo-section"><div class="wrap demo-layout"><div><p class="eyebrow">SUBTITLE PREVIEW</p><h2>見やすい字幕へ。<br>調整は、自分で選ぶ</h2><p>3つのスイッチを試すと、調整の考え方がわかります。<br>このページは説明用のデモです。</p><fieldset class="switches"><legend>調整イメージの設定</legend><label><input id="split" type="checkbox" checked><span>文章量を調整</span><small>複数ページへ</small></label><label><input id="size" type="checkbox" checked><span>文字サイズを調整</span><small>領域に合わせる</small></label><label><input id="line" type="checkbox" checked><span>改行を調整</span><small>読みやすく区切る</small></label></fieldset></div><div><div class="subtitle-preview"><span class="preview-label">字幕の説明イメージ</span><div class="landscape" aria-hidden="true"><div></div><div></div><div></div></div><div class="subtitle-area"><p id="subtitle-text">今日は、酒場と宿屋を兼ねた建物を作ります。</p></div><div class="preview-controls"><button id="previous" type="button" aria-label="前の字幕ページ">←</button><span id="page-status" role="status" aria-live="polite">1 / 2</span><button id="next" type="button" aria-label="次の字幕ページ">→</button></div></div><p class="caption">実際のプラグインの画面・描画ではありません。字幕の切替は文章量による配分のため、YMM4で音声との同期を確認してください。</p></div></div></section>
+<section id="subtitles" class="demo-section"><div class="wrap demo-layout"><div><p class="eyebrow">SUBTITLE PREVIEW</p><h2>見やすい字幕へ。<br>調整は、自分で選ぶ</h2><p>3つのスイッチで、字幕の調整イメージを試せます。<br>解説・会話・手順説明など、ジャンルを問わず使う字幕を想定した説明用デモです。</p><fieldset class="switches"><legend>調整イメージの設定</legend><label><input id="split" type="checkbox" checked><span>文章量を調整</span><small>複数ページへ</small></label><label><input id="size" type="checkbox" checked><span>文字サイズを調整</span><small>領域に合わせる</small></label><label><input id="line" type="checkbox" checked><span>改行を調整</span><small>読みやすく区切る</small></label></fieldset></div><div><div class="subtitle-preview"><span class="preview-label">字幕の説明イメージ</span><div class="neutral-screen" aria-hidden="true"><span class="mock-orbit"></span><span class="mock-line"></span><span class="mock-line"></span><span class="mock-line"></span></div><div class="subtitle-area"><p id="subtitle-text">まずは、伝えたい内容を短く整理してみましょう。</p></div><div class="preview-controls"><button id="previous" type="button" aria-label="前の字幕ページ">←</button><span id="page-status" role="status" aria-live="polite">1 / 2</span><button id="next" type="button" aria-label="次の字幕ページ">→</button></div></div><p class="caption">実際のプラグインの画面・描画ではありません。字幕の切替は文章量による配分のため、YMM4で音声との同期を確認してください。</p></div></div></section>
 <section id="start" class="section wrap"><div class="section-heading"><div><p class="eyebrow">GET STARTED</p><h2>公開後の導入は、<br>小さなプロジェクトから</h2></div><span class="guide-pending">実機チェックリスト（公開準備中）</span></div><ol class="steps"><li><span>01</span><div><h3>プロジェクトをコピー</h3><p>本番のYMMPを別名で保存し、YMM4を終了します。旧EditAssistがある場合は、フォルダーをuser/pluginの外へ退避してください。</p></div></li><li><span>02</span><div><h3>導入ファイルを開く</h3><p>配布開始後、EditAssist本体の.ymmeを、使うYMM4へ導入します。バージョン選択ツールは別パッケージです。</p></div></li><li><span>03</span><div><h3>ツールメニューから起動</h3><p>YMM4を再起動し、「EditAssist：一括編集・素材・診断」を開きます。まずWAV1個の登録・検索・試聴から確認します。</p></div></li><li><span>04</span><div><h3>確認して、適用する</h3><p>コピーしたプロジェクトで変更内容・バックアップ・Undo/Redoを確認。短い再生と動画出力を試してから本番で使ってください。</p></div></li></ol></section>
 <section id="responsibility" class="section responsibility-section" aria-labelledby="responsibility-title"><div class="wrap">
   <div class="section-heading"><div><p class="eyebrow">BEFORE YOU USE</p><h2 id="responsibility-title">利用前に、<br>知っておいてほしいこと</h2></div><p>用途・制限・責任分担を明確にします。<br>現在は制作中で、一般配布・販売は停止しています。</p></div>
@@ -83,5 +83,6 @@
 <noscript><p class="noscript">現在は制作中・配布準備中です。紹介・利用上の注意はJavaScriptを無効にしていても読めます。字幕デモにはJavaScriptが必要です。</p></noscript>
 </body>
 </html>
+
 
 

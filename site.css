@@ -117,3 +117,64 @@ section[id],h1[id],h2[id],article[id],a[id],main[id]{scroll-margin-top:var(--hea
 .site-home .hero .button.primary{background:#b74525;border-color:#b74525}
 .site-home .hero .button.primary:hover{background:#9e371e;border-color:#9e371e}
 .site-home .hero .button.primary:focus-visible{outline:3px solid #232d31;outline-offset:4px}
+
+/* Initial-visit decoration only: never hide, lock, or refocus the actual page. */
+#first-visit-intro[hidden] { display: none; }
+:root[data-first-visit] #first-visit-intro {
+  display: grid !important;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  box-sizing: border-box;
+  place-items: center;
+  margin: 0;
+  padding: 16px;
+  background: #f7f6f0;
+  color: #202c32;
+  pointer-events: none;
+  user-select: none;
+  animation: first-visit-safety 800ms step-end both;
+}
+:root[data-first-visit="leaving"] #first-visit-intro { animation: first-visit-out 160ms ease-out both; }
+:root[data-first-visit] #first-visit-intro[data-brand="tsumuvoxel"] { background: #faf8f2; color: #234735; }
+#first-visit-intro .intro-stack {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  width: max-content;
+  max-width: 100%;
+  transform: translateY(-3vh);
+}
+#first-visit-intro .intro-mark { display: block; width: 40px; height: 40px; }
+#first-visit-intro .intro-name {
+  margin: 0;
+  font: 700 20px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+  animation: first-visit-label 140ms 180ms both;
+}
+#first-visit-intro .intro-track { display: block; width: 64px; height: 2px; margin-top: 2px; }
+#first-visit-intro .intro-track::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: #b74525;
+  transform-origin: left;
+  animation: first-visit-line 240ms 80ms both;
+}
+#first-visit-intro[data-brand="editassist"] .intro-mark { animation: first-visit-label 140ms both; }
+#first-visit-intro .intro-layer { animation: first-visit-layer 180ms both; }
+#first-visit-intro .intro-layer-middle { animation-delay: 70ms; }
+#first-visit-intro .intro-layer-top { animation-delay: 140ms; }
+#first-visit-intro .intro-dots { display: flex; gap: 6px; margin-top: 2px; height: 4px; }
+#first-visit-intro .intro-dots i { width: 4px; height: 4px; background: #dce3d2; animation: first-visit-label 140ms 120ms both; }
+#first-visit-intro .intro-dots i:nth-child(2) { background: #a9b89b; animation-delay: 190ms; }
+#first-visit-intro .intro-dots i:nth-child(3) { background: #234735; animation-delay: 260ms; }
+@keyframes first-visit-safety { from { visibility: visible; } to { visibility: hidden; } }
+@keyframes first-visit-out { from { opacity: 1; } to { opacity: 0; visibility: hidden; } }
+@keyframes first-visit-label { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: none; } }
+@keyframes first-visit-line { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes first-visit-layer { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  :root[data-first-visit] #first-visit-intro { display: none !important; animation: none; }
+  #first-visit-intro * { animation: none !important; }
+}

@@ -1,0 +1,52 @@
+/* About and its home entry only. Existing product/registration styles are retained. */
+.about-page{--about-accent:#b74525;--about-soft:#fff3e7;--about-border:#e0dcd2;--about-muted:#53605f;--about-paper:#fff;--about-text:#232d31}
+.about-page.tv-about{--about-accent:#347451;--about-soft:#eef2e9;--about-border:#d9dfd2;--about-muted:#58695d;--about-text:#26382e}
+.about-page .about-kicker{color:var(--about-accent);font-size:13px;font-weight:800;letter-spacing:.12em}
+.about-page .about-section{padding-block:30px;border-bottom:1px solid var(--about-border);scroll-margin-top:130px}
+.about-page .about-section h2{font-size:28px;line-height:1.5;letter-spacing:0;margin:0 0 18px}
+.about-page .about-section p,.about-page .about-section li{font-size:15px;line-height:1.8}
+.about-page .about-section>p{max-width:58em;color:var(--about-muted)}
+.about-page .about-section>p+p{margin-top:14px}
+.about-page .about-diagram{margin:26px 0}
+.about-page .about-diagram>figcaption{font-size:14px;font-weight:700;margin-bottom:14px;color:var(--about-muted)}
+.about-page .about-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;list-style:none;padding:0;margin:0}
+.about-page .about-flow>li{position:relative;min-width:0;border:1px solid var(--about-border);border-radius:8px;background:var(--about-paper);padding:20px 16px}
+.about-page .about-flow>li:not(:last-child)::after{content:'→';position:absolute;z-index:1;right:-12px;top:50%;transform:translateY(-50%);color:var(--about-accent);font-size:20px;font-weight:800;background:var(--about-soft);border-radius:50%;line-height:1;width:22px;text-align:center}
+.about-page .about-step{display:inline-flex;align-items:center;justify-content:center;color:#fff;background:var(--about-accent);width:32px;height:32px;border-radius:6px;font-weight:800;font-size:13px}
+.about-page .about-flow h3{font-size:17px;line-height:1.6;margin:16px 0 9px}
+.about-page .about-flow p{font-size:14px;line-height:1.8;color:var(--about-muted);margin:0}
+.about-page .about-note{padding:20px 22px;border-left:4px solid var(--about-accent);background:var(--about-soft);margin-top:20px;border-radius:0 8px 8px 0}
+.about-page .about-note h3{font-size:17px;line-height:1.6;margin:0 0 8px}
+.about-page .about-note p{margin:0;color:var(--about-muted)}
+.about-page .about-details{margin-top:20px;border:1px solid var(--about-border);border-radius:8px;background:var(--about-paper)}
+.about-page .about-details summary{padding:14px 18px;min-height:48px;cursor:pointer;font-size:15px;font-weight:700;line-height:1.7}
+.about-page .about-details ul{padding:0 24px 18px 38px;margin:0;color:var(--about-muted)}
+.about-page .about-details li+li{margin-top:10px}
+.about-page .about-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:24px}
+.about-page .about-cards article{padding:20px;border:1px solid var(--about-border);border-top:3px solid var(--about-accent);border-radius:8px;background:var(--about-paper);min-width:0}
+.about-page .about-state{font-size:13px;font-weight:800;color:var(--about-accent)}
+.about-page .about-cards h3{font-size:17px;line-height:1.6;margin:12px 0 10px}
+.about-page .about-cards p{font-size:14px;color:var(--about-muted);margin:0}
+.about-page .about-links{display:flex;flex-wrap:wrap;gap:14px 24px;margin-top:22px}
+.about-page .about-links a,.about-page .about-section p>a{font-size:14px;min-height:44px;display:inline-flex;align-items:center;color:var(--about-accent);text-decoration:underline;text-underline-offset:4px;font-weight:700}
+.about-page .about-footnote{font-size:13px!important;margin-top:18px;color:var(--about-muted)}
+.about-entry{display:flex;align-items:center;justify-content:space-between;gap:16px 32px;margin-block:26px;padding:22px 26px;border:1px solid #e0dcd2;border-radius:8px;background:#fff}
+.about-entry p{font-size:15px;line-height:1.8;margin:0;max-width:54em;color:#53605f}
+.about-entry a{font-size:14px;line-height:1.7;font-weight:800;min-height:44px;display:inline-flex;align-items:center;color:#a84022;text-decoration:underline;text-underline-offset:4px;flex-shrink:0}
+.tv-about-entry{border-color:#d9dfd2;background:#eef2e9}
+.tv-about-entry p{color:#58695d}.tv-about-entry a{color:#285d40}
+.tv-about .about-heading{padding-block:42px 30px}
+.tv-about .about-heading h1{font-size:clamp(30px,3.5vw,48px);line-height:1.5;letter-spacing:0;margin:14px 0 18px}
+.tv-about .about-heading .about-lead{max-width:46em;color:var(--tv-muted);font-size:17px;line-height:1.8}
+.tv-about .about-back{font-size:14px;display:inline-flex;align-items:center;min-height:44px}
+.tv-about .about-layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:38px;align-items:start;padding-bottom:64px}
+.tv-about .about-content{min-width:0}
+.tv-about .about-toc{position:sticky;top:110px;background:#fff;border:1px solid var(--tv-soft-line);border-radius:8px;padding:16px}
+.tv-about .about-toc summary{font-weight:700;font-size:15px;min-height:44px;padding:8px 0}
+.tv-about .about-toc nav{display:grid;gap:2px}
+.tv-about .about-toc a{font-size:14px;min-height:44px;display:flex;align-items:center;padding:6px 0;text-decoration:none}
+.tv-about .nav-panel a[aria-current=page]{font-weight:750;color:var(--tv-accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+.about-page summary:focus-visible,.about-page a:focus-visible,.about-entry a:focus-visible{outline:3px solid var(--about-accent,#875d3b);outline-offset:4px}
+@media(min-width:601px) and (max-width:1100px){.about-page .about-flow{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}.about-page .about-flow>li:nth-child(2)::after{content:'↙';right:auto;left:-18px;top:auto;bottom:-24px;transform:none}}
+@media(max-width:900px){.tv-about .about-layout{grid-template-columns:minmax(0,1fr);gap:20px}.tv-about .about-toc{position:static}.about-page .about-cards{grid-template-columns:minmax(0,1fr)}.about-entry{flex-direction:column;align-items:flex-start;gap:12px}}
+@media(max-width:600px){.about-page .about-flow{grid-template-columns:minmax(0,1fr);gap:18px}.about-page .about-flow>li:not(:last-child)::after{display:block;content:'↓';right:22px;top:auto;bottom:-15px;transform:none}.about-page .about-section h2{font-size:24px}.about-page .about-section{padding-block:26px}.about-page .about-note{padding:18px}.about-entry{padding:18px 20px}.about-entry a{flex-shrink:1}.tv-about .about-heading{padding-block:24px}.tv-about .about-heading .about-lead{font-size:16px}}
